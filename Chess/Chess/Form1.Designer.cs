@@ -38,7 +38,7 @@
             refreshToolStripMenuItem = new ToolStripMenuItem();
             calculeDeSolutionToolStripMenuItem = new ToolStripMenuItem();
             joueur1ToolStripMenuItem = new ToolStripMenuItem();
-            joueur2ToolStripMenuItem = new ToolStripMenuItem();
+            calculateSolutionForPlayer1Deep4ToolStripMenuItem = new ToolStripMenuItem();
             jouerToolStripMenuItem = new ToolStripMenuItem();
             calculDeSolutionAvec8ThreadsToolStripMenuItem = new ToolStripMenuItem();
             joueur1Niveau5ToolStripMenuItem = new ToolStripMenuItem();
@@ -56,6 +56,7 @@
             tm3 = new System.Windows.Forms.Timer(components);
             sv = new SaveFileDialog();
             opf = new OpenFileDialog();
+            joueur2ToolStripMenuItem = new ToolStripDropDownMenu();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -108,37 +109,37 @@
             // refreshToolStripMenuItem
             // 
             refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            refreshToolStripMenuItem.Size = new Size(420, 26);
+            refreshToolStripMenuItem.Size = new Size(421, 26);
             refreshToolStripMenuItem.Text = "Refresh";
             refreshToolStripMenuItem.Click += refreshToolStripMenuItem_Click;
             // 
             // calculeDeSolutionToolStripMenuItem
             // 
-            calculeDeSolutionToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { joueur1ToolStripMenuItem, joueur2ToolStripMenuItem, jouerToolStripMenuItem });
+            calculeDeSolutionToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { joueur1ToolStripMenuItem, calculateSolutionForPlayer1Deep4ToolStripMenuItem, jouerToolStripMenuItem });
             calculeDeSolutionToolStripMenuItem.Name = "calculeDeSolutionToolStripMenuItem";
             calculeDeSolutionToolStripMenuItem.Size = new Size(420, 26);
-            calculeDeSolutionToolStripMenuItem.Text = "Calcul de solution a profondeur 4 avec un Thread";
+            calculeDeSolutionToolStripMenuItem.Text = "Solution calculate with depth of 4 and one thread";
             calculeDeSolutionToolStripMenuItem.Click += calculeDeSolutionToolStripMenuItem_Click;
             // 
             // joueur1ToolStripMenuItem
             // 
             joueur1ToolStripMenuItem.Name = "joueur1ToolStripMenuItem";
-            joueur1ToolStripMenuItem.Size = new Size(393, 26);
-            joueur1ToolStripMenuItem.Text = "Calcul de solution pour player 1 avec deep=4";
+            joueur1ToolStripMenuItem.Size = new Size(353, 26);
+            joueur1ToolStripMenuItem.Text = "Solution calculate for player 1, depth=4";
             joueur1ToolStripMenuItem.Click += joueur1ToolStripMenuItem_Click;
             // 
-            // joueur2ToolStripMenuItem
+            // calculateSolutionForPlayer1Deep4ToolStripMenuItem
             // 
-            joueur2ToolStripMenuItem.Name = "joueur2ToolStripMenuItem";
-            joueur2ToolStripMenuItem.Size = new Size(393, 26);
-            joueur2ToolStripMenuItem.Text = "Calcul de solution pour player 2 avec deep=4";
-            joueur2ToolStripMenuItem.Click += joueur2ToolStripMenuItem_Click;
+            calculateSolutionForPlayer1Deep4ToolStripMenuItem.Name = "calculateSolutionForPlayer1Deep4ToolStripMenuItem";
+            calculateSolutionForPlayer1Deep4ToolStripMenuItem.Size = new Size(353, 26);
+            calculateSolutionForPlayer1Deep4ToolStripMenuItem.Text = "Solution calculate for player 2, depth=4";
+            calculateSolutionForPlayer1Deep4ToolStripMenuItem.Click += joueur2ToolStripMenuItem_Click;
             // 
             // jouerToolStripMenuItem
             // 
             jouerToolStripMenuItem.Name = "jouerToolStripMenuItem";
-            jouerToolStripMenuItem.Size = new Size(393, 26);
-            jouerToolStripMenuItem.Text = "Jouer automatiquement";
+            jouerToolStripMenuItem.Size = new Size(353, 26);
+            jouerToolStripMenuItem.Text = "Self play with depth=4";
             jouerToolStripMenuItem.Click += jouerToolStripMenuItem_Click;
             // 
             // calculDeSolutionAvec8ThreadsToolStripMenuItem
@@ -146,69 +147,69 @@
             calculDeSolutionAvec8ThreadsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { joueur1Niveau5ToolStripMenuItem, joueur2Niveau5ToolStripMenuItem, jouerAutomatiquementNIveau5ToolStripMenuItem });
             calculDeSolutionAvec8ThreadsToolStripMenuItem.Name = "calculDeSolutionAvec8ThreadsToolStripMenuItem";
             calculDeSolutionAvec8ThreadsToolStripMenuItem.Size = new Size(420, 26);
-            calculDeSolutionAvec8ThreadsToolStripMenuItem.Text = "Calcul de Solution avec 8 Threads";
+            calculDeSolutionAvec8ThreadsToolStripMenuItem.Text = "Solution calculate with 8 Threads";
             calculDeSolutionAvec8ThreadsToolStripMenuItem.Click += calculDeSolutionAvec8ThreadsToolStripMenuItem_Click;
             // 
             // joueur1Niveau5ToolStripMenuItem
             // 
             joueur1Niveau5ToolStripMenuItem.Name = "joueur1Niveau5ToolStripMenuItem";
-            joueur1Niveau5ToolStripMenuItem.Size = new Size(358, 26);
-            joueur1Niveau5ToolStripMenuItem.Text = "Calcul de solution pour player 1 deep=5";
+            joueur1Niveau5ToolStripMenuItem.Size = new Size(384, 26);
+            joueur1Niveau5ToolStripMenuItem.Text = "Solution calculate for player 1 and  depth=5";
             joueur1Niveau5ToolStripMenuItem.Click += joueur1Niveau5ToolStripMenuItem_Click;
             // 
             // joueur2Niveau5ToolStripMenuItem
             // 
             joueur2Niveau5ToolStripMenuItem.Name = "joueur2Niveau5ToolStripMenuItem";
-            joueur2Niveau5ToolStripMenuItem.Size = new Size(358, 26);
-            joueur2Niveau5ToolStripMenuItem.Text = "Calcul de solution pour player 2 deep=5";
+            joueur2Niveau5ToolStripMenuItem.Size = new Size(384, 26);
+            joueur2Niveau5ToolStripMenuItem.Text = "Solution calculate for player 2 and  depth=5";
             joueur2Niveau5ToolStripMenuItem.Click += joueur2Niveau5ToolStripMenuItem_Click;
             // 
             // jouerAutomatiquementNIveau5ToolStripMenuItem
             // 
             jouerAutomatiquementNIveau5ToolStripMenuItem.Name = "jouerAutomatiquementNIveau5ToolStripMenuItem";
-            jouerAutomatiquementNIveau5ToolStripMenuItem.Size = new Size(358, 26);
-            jouerAutomatiquementNIveau5ToolStripMenuItem.Text = "Jouer Automatiquement deep=5";
+            jouerAutomatiquementNIveau5ToolStripMenuItem.Size = new Size(403, 26);
+            jouerAutomatiquementNIveau5ToolStripMenuItem.Text = "Self playing with depth=5";
             jouerAutomatiquementNIveau5ToolStripMenuItem.Click += jouerAutomatiquementNIveau5ToolStripMenuItem_Click;
             // 
             // calculDeSolutionAvec16ThreadsToolStripMenuItem
             // 
             calculDeSolutionAvec16ThreadsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem1, jouerPourJoueur1Pr5ToolStripMenuItem, jouerAutomatiquementProfondeur5ToolStripMenuItem });
             calculDeSolutionAvec16ThreadsToolStripMenuItem.Name = "calculDeSolutionAvec16ThreadsToolStripMenuItem";
-            calculDeSolutionAvec16ThreadsToolStripMenuItem.Size = new Size(420, 26);
-            calculDeSolutionAvec16ThreadsToolStripMenuItem.Text = "Calcul de Solution avec 16 Threads";
+            calculDeSolutionAvec16ThreadsToolStripMenuItem.Size = new Size(421, 26);
+            calculDeSolutionAvec16ThreadsToolStripMenuItem.Text = "Solution calculate with 16 Threads";
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
             toolStripMenuItem1.Size = new Size(358, 26);
-            toolStripMenuItem1.Text = "Calcul de solution pour player 1 deep=5";
+            toolStripMenuItem1.Text = "Solution calculate for player 1 deep=5";
             toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // jouerPourJoueur1Pr5ToolStripMenuItem
             // 
             jouerPourJoueur1Pr5ToolStripMenuItem.Name = "jouerPourJoueur1Pr5ToolStripMenuItem";
-            jouerPourJoueur1Pr5ToolStripMenuItem.Size = new Size(358, 26);
-            jouerPourJoueur1Pr5ToolStripMenuItem.Text = "Calcul de solution pour player 2 deep=5";
+            jouerPourJoueur1Pr5ToolStripMenuItem.Size = new Size(344, 26);
+            jouerPourJoueur1Pr5ToolStripMenuItem.Text = "Solution calculate for player 2 deep=5";
             jouerPourJoueur1Pr5ToolStripMenuItem.Click += jouerPourJoueur1Pr5ToolStripMenuItem_Click;
             // 
             // jouerAutomatiquementProfondeur5ToolStripMenuItem
             // 
             jouerAutomatiquementProfondeur5ToolStripMenuItem.Name = "jouerAutomatiquementProfondeur5ToolStripMenuItem";
-            jouerAutomatiquementProfondeur5ToolStripMenuItem.Size = new Size(358, 26);
-            jouerAutomatiquementProfondeur5ToolStripMenuItem.Text = "Automatic playing with tree deep=5";
+            jouerAutomatiquementProfondeur5ToolStripMenuItem.Size = new Size(344, 26);
+            jouerAutomatiquementProfondeur5ToolStripMenuItem.Text = "Self playing with tree deep=5";
             jouerAutomatiquementProfondeur5ToolStripMenuItem.Click += jouerAutomatiquementProfondeur5ToolStripMenuItem_Click;
             // 
             // retourToolStripMenuItem
             // 
             retourToolStripMenuItem.Name = "retourToolStripMenuItem";
-            retourToolStripMenuItem.Size = new Size(420, 26);
-            retourToolStripMenuItem.Text = "Back---------------------------------------Barre Arr";
+            retourToolStripMenuItem.Size = new Size(421, 26);
+            retourToolStripMenuItem.Text = "Back---------------------------------------Return Bar";
             retourToolStripMenuItem.Click += retourToolStripMenuItem_Click;
             // 
             // redoaToolStripMenuItem
             // 
             redoaToolStripMenuItem.Name = "redoaToolStripMenuItem";
-            redoaToolStripMenuItem.Size = new Size(420, 26);
+            redoaToolStripMenuItem.Size = new Size(421, 26);
             redoaToolStripMenuItem.Text = "Redo--------------------------------------------   a";
             redoaToolStripMenuItem.Click += redoaToolStripMenuItem_Click;
             // 
@@ -248,6 +249,12 @@
             // 
             opf.FileName = "openFileDialog1";
             // 
+            // joueur2ToolStripMenuItem
+            // 
+            joueur2ToolStripMenuItem.AutoClose = false;
+            joueur2ToolStripMenuItem.Name = "joueur2ToolStripMenuItem";
+            joueur2ToolStripMenuItem.Size = new Size(61, 4);
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -285,17 +292,13 @@
         private ToolStripMenuItem nouvellePartieToolStripMenuItem;
         public Label label1;
         private ToolStripMenuItem outilsToolStripMenuItem;
-        private ToolStripMenuItem calculeDeSolutionToolStripMenuItem;
         private ToolStripMenuItem refreshToolStripMenuItem;
-        private ToolStripMenuItem joueur1ToolStripMenuItem;
-        private ToolStripMenuItem joueur2ToolStripMenuItem;
         private System.Windows.Forms.Timer tm;
         private ToolStripMenuItem calculDeSolutionAvec8ThreadsToolStripMenuItem;
         private ToolStripMenuItem joueur1Niveau5ToolStripMenuItem;
         private ToolStripMenuItem joueur2Niveau5ToolStripMenuItem;
         private ToolStripMenuItem jouerAutomatiquementNIveau5ToolStripMenuItem;
         private System.Windows.Forms.Timer tm2;
-        private ToolStripMenuItem jouerToolStripMenuItem;
         private ToolStripMenuItem calculDeSolutionAvec16ThreadsToolStripMenuItem;
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem jouerPourJoueur1Pr5ToolStripMenuItem;
@@ -307,5 +310,10 @@
         private SaveFileDialog sv;
         private OpenFileDialog opf;
         private ToolStripMenuItem redoaToolStripMenuItem;
+        private ToolStripMenuItem calculeDeSolutionToolStripMenuItem;
+        private ToolStripMenuItem calculateSolutionForPlayer1Deep4ToolStripMenuItem;
+        private ToolStripMenuItem joueur1ToolStripMenuItem;
+        private ToolStripMenuItem jouerToolStripMenuItem;
+        private ToolStripDropDownMenu joueur2ToolStripMenuItem;
     }
 }

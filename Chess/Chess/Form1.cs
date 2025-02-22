@@ -157,12 +157,12 @@ namespace Chess
                     if (tb.Solcalcul(tb.tour, 1, ref a, ref b, ref c, ref d) > 50)
                     {
                         stop = 1;
-                        label1.Text = "Echec et Mat!";
+                        label1.Text = "Checkmate!";
                     }
                     else
                     {
                         stop = 1;
-                        label1.Text = "Echec et Pat!";
+                        label1.Text = "Checkmate!";
                     }
                 }
                 else
@@ -240,12 +240,12 @@ namespace Chess
                     if (tb.Solcalcul(tb.tour, 1, ref a, ref b, ref c, ref d) > 50)
                     {
                         stop = 1;
-                        label1.Text = "Echec et Mat!";
+                        label1.Text = "Checkmate!";
                     }
                     else
                     {
                         stop = 1;
-                        label1.Text = "Echec et Pat!";
+                        label1.Text = "Checkmate!";
                     }
                 }
                 else
@@ -287,12 +287,12 @@ namespace Chess
                         if (tb.Solcalcul(tb.tour, 1, ref a, ref b, ref c, ref d) > 50)
                         {
                             stop = 1;
-                            label1.Text += "\nEchec et Mat!  " + choix.ToString();
+                            label1.Text += "\nCheckmate!  " + choix.ToString();
                         }
                         else
                         {
                             stop = 1;
-                            label1.Text += "\nEchec et Pat!  " + choix.ToString();
+                            label1.Text += "\nCheckmate!  " + choix.ToString();
                         }
                     }
                     else if (choix > 50)
