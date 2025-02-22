@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kgcxmKAGHNw=",
+  "success": true,
+  "projectFilePath": "D:\\Chess\\Chess\\Chess\\Chess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shakk\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.26100.34\\microsoft.windows.sdk.net.ref.10.0.26100.34.nupkg.sha512"
+  ],
+  "logs": []
+}
