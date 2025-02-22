@@ -63,11 +63,6 @@ namespace Chess.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap chb {
-            get {
-                object obj = ResourceManager.GetObject("chb", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
+        
     }
 }
